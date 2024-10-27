@@ -1,3 +1,4 @@
 baseURL = 'https://opilo.nl/'
 languageCode = 'en-us'
 title = "Opilo - Development & consultancy"
+theme = "opilo-website-theme"

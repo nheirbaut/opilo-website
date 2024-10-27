@@ -25,7 +25,8 @@
         "davidanson.vscode-markdownlint",
         "streetsidesoftware.code-spell-checker",
         "ms-azuretools.vscode-docker",
-        "tamasfe.even-better-toml"
+        "tamasfe.even-better-toml",
+        "yzhang.markdown-all-in-one"
       ]
     }
   },
