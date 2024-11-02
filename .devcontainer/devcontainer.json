@@ -1,21 +1,14 @@
 {
   "name": "Opilo Website Dev Container",
-  "build": {
-    "dockerfile": "Dockerfile"
+  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/hugo:1": {
+      "extended": true,
+      "version": "latest"
+    }
   },
-  // 👇 Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
-  // "features": { "ghcr.io/devcontainers/features/docker-in-docker:2": {} },
-  // 👇 Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // "forwardPorts": [],
-  // Configure tool-specific properties.
   "customizations": {
-    // Configure properties specific to VS Code.
     "vscode": {
-      // Set *default* container specific settings.json values on container create.
-      "settings": {
-        "html.format.templating": true
-      },
-      // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
         "eliostruyf.vscode-front-matter",
         "rusnasonov.vscode-hugo",
@@ -30,6 +23,5 @@
       ]
     }
   },
-  "remoteUser": "vscode",
-  "postCreateCommand": "pnpm install-completion zsh"
+  "remoteUser": "vscode"
 }
