@@ -1,0 +1,7 @@
+{
+    "emmet.excludeLanguages": [],
+    "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+    "emmet.triggerExpansionOnTab": true,
+    "cSpell.language": "en, nl, lorem",
+    "editor.formatOnSave": false
+}
