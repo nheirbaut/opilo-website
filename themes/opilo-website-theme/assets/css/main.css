@@ -264,9 +264,9 @@ p {
     font-weight: 700;
 }
 
-.about-me img {
+/* .about-me img {
     border: 5px solid var(--primary-color);
-}
+} */
 
 .about-me h5 {
     font-weight: 600;
