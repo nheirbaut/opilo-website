@@ -1,5 +1,240 @@
 {{ define "main" }}
 <main>
-  {{ .Content }}
+  <!-- 2. Hero Section -->
+  <section class="hero-section text-center text-white d-flex align-items-center"
+    style="background-image: url('hero-bg.jpg'); height: 100vh; background-size: cover;">
+    <div class="container">
+      <h1 class="display-4">Freelance Software Engineer</h1>
+      <p class="lead">Specializing in Python, C++, C#, Docker, Linux, and more.</p>
+      <a href="#" class="btn btn-primary btn-lg m-2">View My Resume</a>
+      <a href="#" class="btn btn-outline-light btn-lg m-2">Hire Me</a>
+    </div>
+  </section>
+
+  <!-- 3. Technologies Overview -->
+  <section class="technologies py-5">
+    <div class="container text-center">
+      <h2>Technologies I Work With</h2>
+      <div class="row mt-4">
+        <!-- Technology Icons -->
+        <div class="col-md-2 col-4">
+          <img src="icons/python.png" alt="Python" class="img-fluid">
+          <p>Python</p>
+        </div>
+        <div class="col-md-2 col-4">
+          <img src="icons/cpp.png" alt="C++" class="img-fluid">
+          <p>C++</p>
+        </div>
+        <div class="col-md-2 col-4">
+          <img src="icons/csharp.png" alt="C#" class="img-fluid">
+          <p>C#</p>
+        </div>
+        <div class="col-md-2 col-4">
+          <img src="icons/docker.png" alt="Docker" class="img-fluid">
+          <p>Docker</p>
+        </div>
+        <div class="col-md-2 col-4">
+          <img src="icons/linux.png" alt="Linux" class="img-fluid">
+          <p>Linux</p>
+        </div>
+        <!-- Add more as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Services Offered -->
+  <section class="services py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Services I Offer</h2>
+      <div class="row mt-4">
+        <!-- Service 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <img src="icons/test-automation.png" alt="Test Automation" class="mb-3" width="50">
+              <h5 class="card-title">Test Automation</h5>
+              <p class="card-text">I provide automated testing solutions to improve software reliability and efficiency.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <img src="icons/code-review.png" alt="Code Review" class="mb-3" width="50">
+              <h5 class="card-title">Independent Code Reviews</h5>
+              <p class="card-text">Offering thorough code reviews to ensure code quality and best practices.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <img src="icons/architecture.png" alt="Architecture Review" class="mb-3" width="50">
+              <h5 class="card-title">Architecture Reviews</h5>
+              <p class="card-text">Providing expert insights into software architecture for scalability and performance.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more services as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Courses -->
+  <section class="courses py-5">
+    <div class="container">
+      <h2 class="text-center">Courses I Organize</h2>
+      <div class="row mt-4">
+        <!-- Course 1 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="courses/course1.jpg" class="card-img-top" alt="Course Image">
+            <div class="card-body">
+              <h5 class="card-title">Introduction to Python</h5>
+              <p class="card-text">Learn the basics of Python programming in this comprehensive course.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Course 2 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="courses/course2.jpg" class="card-img-top" alt="Course Image">
+            <div class="card-body">
+              <h5 class="card-title">Advanced C++ Techniques</h5>
+              <p class="card-text">Deep dive into advanced concepts and best practices in C++.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Course 3 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="courses/course3.jpg" class="card-img-top" alt="Course Image">
+            <div class="card-body">
+              <h5 class="card-title">Docker for Developers</h5>
+              <p class="card-text">Master Docker and containerization to streamline your development workflow.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more courses as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Latest Blog Posts -->
+  <section class="blog-posts py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Latest Blog Posts</h2>
+      <div class="row mt-4">
+        <!-- Blog Post 1 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="blog/blog1.jpg" class="card-img-top" alt="Blog Image">
+            <div class="card-body">
+              <h5 class="card-title">Understanding Async Programming</h5>
+              <p class="card-text">An in-depth look at asynchronous programming patterns in modern software development.
+              </p>
+              <a href="#" class="btn btn-outline-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Blog Post 2 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="blog/blog2.jpg" class="card-img-top" alt="Blog Image">
+            <div class="card-body">
+              <h5 class="card-title">Effective Test Automation Strategies</h5>
+              <p class="card-text">Learn how to implement efficient test automation in your projects.</p>
+              <a href="#" class="btn btn-outline-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Blog Post 3 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="blog/blog3.jpg" class="card-img-top" alt="Blog Image">
+            <div class="card-body">
+              <h5 class="card-title">Docker Tips and Tricks</h5>
+              <p class="card-text">Enhance your Docker skills with these practical tips.</p>
+              <a href="#" class="btn btn-outline-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more blog posts as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. About Me/Resume Highlights -->
+  <section class="about-me py-5">
+    <div class="container">
+      <h2 class="text-center">About Me</h2>
+      <div class="row mt-4">
+        <div class="col-md-4 text-center">
+          <!-- Optional: Add a profile image -->
+          <img src="your-photo.jpg" alt="Your Photo" class="img-fluid rounded-circle mb-3" width="200">
+        </div>
+        <div class="col-md-8">
+          <p>
+            I am a freelance software engineer with over X years of experience in developing high-quality software
+            solutions. My expertise lies in Python, C++, C#, Docker, Linux, and more. I am passionate about creating
+            efficient and scalable applications.
+          </p>
+          <ul>
+            <li>Key Achievement 1</li>
+            <li>Key Achievement 2</li>
+            <li>Key Achievement 3</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Download My Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Contact Section -->
+  <section class="contact py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Get in Touch</h2>
+      <div class="row mt-4">
+        <!-- Contact Form -->
+        <div class="col-md-6">
+          <form action="#" method="post">
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name *</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email *</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message *</label>
+              <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+        <!-- Contact Information -->
+        <div class="col-md-6">
+          <h5>Contact Information</h5>
+          <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+          <p><strong>Phone:</strong> +123 456 7890</p>
+          <p><strong>Location:</strong> Your City, Country</p>
+          <h5 class="mt-4">Follow Me</h5>
+          <!-- Social Media Links -->
+          <a href="#" class="me-2"><img src="icons/linkedin.png" alt="LinkedIn" width="30"></a>
+          <a href="#" class="me-2"><img src="icons/github.png" alt="GitHub" width="30"></a>
+          <a href="#"><img src="icons/twitter.png" alt="Twitter" width="30"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 {{ end }}
