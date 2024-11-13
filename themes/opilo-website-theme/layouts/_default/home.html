@@ -1,48 +1,17 @@
 {{ define "main" }}
 <main>
-  <!-- 2. Hero Section -->
+  <!-- 2. Hero Section with Enhanced Tagline -->
   <section class="hero-section text-center text-white d-flex align-items-center"
     style="background-image: url('hero-bg.jpg'); height: 100vh; background-size: cover;">
     <div class="container">
       <h1 class="display-4">Freelance Software Engineer</h1>
-      <p class="lead">Specializing in Python, C++, C#, Docker, Linux, and more.</p>
+      <p class="lead">Delivering robust software solutions through expert code and architecture reviews.</p>
       <a href="#" class="btn btn-primary btn-lg m-2">View My Resume</a>
-      <a href="#" class="btn btn-outline-light btn-lg m-2">Hire Me</a>
+      <a href="#" class="btn btn-outline-light btn-lg m-2">Contact Me</a>
     </div>
   </section>
 
-  <!-- 3. Technologies Overview -->
-  <section class="technologies py-5">
-    <div class="container text-center">
-      <h2>Technologies I Work With</h2>
-      <div class="row mt-4">
-        <!-- Technology Icons -->
-        <div class="col-md-2 col-4">
-          <img src="icons/python.png" alt="Python" class="img-fluid">
-          <p>Python</p>
-        </div>
-        <div class="col-md-2 col-4">
-          <img src="icons/cpp.png" alt="C++" class="img-fluid">
-          <p>C++</p>
-        </div>
-        <div class="col-md-2 col-4">
-          <img src="icons/csharp.png" alt="C#" class="img-fluid">
-          <p>C#</p>
-        </div>
-        <div class="col-md-2 col-4">
-          <img src="icons/docker.png" alt="Docker" class="img-fluid">
-          <p>Docker</p>
-        </div>
-        <div class="col-md-2 col-4">
-          <img src="icons/linux.png" alt="Linux" class="img-fluid">
-          <p>Linux</p>
-        </div>
-        <!-- Add more as needed -->
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. Services Offered -->
+  <!-- 3. Services Offered (Moved Up) -->
   <section class="services py-5 bg-light">
     <div class="container">
       <h2 class="text-center">Services I Offer</h2>
@@ -55,6 +24,7 @@
               <h5 class="card-title">Test Automation</h5>
               <p class="card-text">I provide automated testing solutions to improve software reliability and efficiency.
               </p>
+              <a href="#" class="btn btn-primary">Learn More</a>
             </div>
           </div>
         </div>
@@ -65,6 +35,7 @@
               <img src="icons/code-review.png" alt="Code Review" class="mb-3" width="50">
               <h5 class="card-title">Independent Code Reviews</h5>
               <p class="card-text">Offering thorough code reviews to ensure code quality and best practices.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
             </div>
           </div>
         </div>
@@ -76,6 +47,7 @@
               <h5 class="card-title">Architecture Reviews</h5>
               <p class="card-text">Providing expert insights into software architecture for scalability and performance.
               </p>
+              <a href="#" class="btn btn-primary">Learn More</a>
             </div>
           </div>
         </div>
@@ -84,7 +56,7 @@
     </div>
   </section>
 
-  <!-- 5. Courses -->
+  <!-- 4. Courses (With CTAs) -->
   <section class="courses py-5">
     <div class="container">
       <h2 class="text-center">Courses I Organize</h2>
@@ -96,7 +68,7 @@
             <div class="card-body">
               <h5 class="card-title">Introduction to Python</h5>
               <p class="card-text">Learn the basics of Python programming in this comprehensive course.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <a href="#" class="btn btn-primary">Enroll Now</a>
             </div>
           </div>
         </div>
@@ -107,7 +79,7 @@
             <div class="card-body">
               <h5 class="card-title">Advanced C++ Techniques</h5>
               <p class="card-text">Deep dive into advanced concepts and best practices in C++.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <a href="#" class="btn btn-primary">Enroll Now</a>
             </div>
           </div>
         </div>
@@ -118,7 +90,7 @@
             <div class="card-body">
               <h5 class="card-title">Docker for Developers</h5>
               <p class="card-text">Master Docker and containerization to streamline your development workflow.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <a href="#" class="btn btn-primary">Enroll Now</a>
             </div>
           </div>
         </div>
@@ -127,8 +99,47 @@
     </div>
   </section>
 
+  <!-- 5. Testimonials (Optional Section) -->
+  {{/*  <section class="testimonials py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">What Clients Say</h2>
+      <div class="row mt-4">
+        <!-- Testimonial 1 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <p class="card-text">"An exceptional engineer who delivered beyond our expectations. Highly recommended!"
+              </p>
+              <h5 class="card-title">- Client Name, Company</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <p class="card-text">"The code review was thorough and insightful, greatly improving our project's
+                quality."</p>
+              <h5 class="card-title">- Client Name, Company</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <p class="card-text">"The Docker course was enlightening and well-structured. Highly valuable!"</p>
+              <h5 class="card-title">- Student Name</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Add more testimonials as needed -->
+      </div>
+    </div>
+  </section>  */}}
+
   <!-- 6. Latest Blog Posts -->
-  <section class="blog-posts py-5 bg-light">
+  <section class="blog-posts py-5">
     <div class="container">
       <h2 class="text-center">Latest Blog Posts</h2>
       <div class="row mt-4">
@@ -171,8 +182,8 @@
     </div>
   </section>
 
-  <!-- 7. About Me/Resume Highlights -->
-  <section class="about-me py-5">
+  <!-- 7. About Me and Technologies Overview (Combined) -->
+  <section class="about-me py-5 bg-light">
     <div class="container">
       <h2 class="text-center">About Me</h2>
       <div class="row mt-4">
@@ -186,19 +197,39 @@
             solutions. My expertise lies in Python, C++, C#, Docker, Linux, and more. I am passionate about creating
             efficient and scalable applications.
           </p>
-          <ul>
-            <li>Key Achievement 1</li>
-            <li>Key Achievement 2</li>
-            <li>Key Achievement 3</li>
-          </ul>
-          <a href="#" class="btn btn-primary">Download My Resume</a>
+          <!-- Technologies Overview -->
+          <h5>Technologies I Work With:</h5>
+          <div class="row mt-3">
+            <div class="col-md-2 col-4">
+              <img src="icons/python.png" alt="Python" class="img-fluid">
+              <p>Python</p>
+            </div>
+            <div class="col-md-2 col-4">
+              <img src="icons/cpp.png" alt="C++" class="img-fluid">
+              <p>C++</p>
+            </div>
+            <div class="col-md-2 col-4">
+              <img src="icons/csharp.png" alt="C#" class="img-fluid">
+              <p>C#</p>
+            </div>
+            <div class="col-md-2 col-4">
+              <img src="icons/docker.png" alt="Docker" class="img-fluid">
+              <p>Docker</p>
+            </div>
+            <div class="col-md-2 col-4">
+              <img src="icons/linux.png" alt="Linux" class="img-fluid">
+              <p>Linux</p>
+            </div>
+            <!-- Add more as needed -->
+          </div>
+          <a href="#" class="btn btn-primary mt-3">Download My Resume</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- 8. Contact Section -->
-  <section class="contact py-5 bg-light">
+  <section class="contact py-5">
     <div class="container">
       <h2 class="text-center">Get in Touch</h2>
       <div class="row mt-4">
