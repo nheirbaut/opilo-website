@@ -6,22 +6,6 @@ theme = "opilo-website-theme"
 [params]
     shortTitle = 'Opilo'
 
-[menus]
-  [[menus.main]]
-    name = 'Blog'
-    pageRef = '/posts'
-    weight = 30
-
-  [[menus.main]]
-    name = 'Training'
-    pageRef = '/courses'
-    weight = 40
-
-  [[menus.main]]
-    name = 'Services'
-    pageRef = '/services'
-    weight = 50
-
 [module]
   [module.hugoVersion]
     extended = false
