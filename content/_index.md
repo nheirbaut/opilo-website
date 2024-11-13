@@ -1,6 +1,7 @@
 +++
-title = 'Opilo - Development & Consultancy'
+title = 'Home'
 date = 2024-11-03T07:15:25Z
 draft = false
-subtitle = 'Learning basic Hugo concepts'
+menu = 'main'
+weight = 10
 +++
