@@ -1,4 +1,38 @@
 baseURL = 'https://opilo.nl/'
 languageCode = 'en-us'
-title = "Opilo - Development & Consultancy"
+title = "Opilo - Software Development, Consultancy and Training"
 theme = "opilo-website-theme"
+
+[params]
+    shortTitle = 'Opilo'
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+
+  [[menus.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 20
+
+  [[menus.main]]
+    name = 'Blog'
+    pageRef = '/posts'
+    weight = 30
+
+  [[menus.main]]
+    name = 'Training'
+    pageRef = '/courses'
+    weight = 40
+
+  [[menus.main]]
+    name = 'Services'
+    pageRef = '/services'
+    weight = 50
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
