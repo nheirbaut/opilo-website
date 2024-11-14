@@ -1,0 +1,90 @@
+name: "Niels Heirbaut"
+subtitle: "Freelance Software Engineer"
+description: "Specializing in Python, C++, C#, Docker, Linux, and more."
+
+contact:
+  email: "niels@opilo.nl"
+  phone: "+31 6 24901736"
+  location: "Lekkerkerk, Netherlands"
+  linkedin: "https://www.linkedin.com/in/nielsheirbaut"
+  github: "https://github.com/nheirbaut"
+  x: "https://x.com/nielsheirbaut"
+
+skills:
+  - category: "Programming Languages"
+    items:
+      - "Python"
+      - "C++"
+      - "C#"
+
+  - category: "Web Technologies"
+    items:
+      - "HTML"
+      - "CSS"
+      - "JavaScript"
+      - "Django"
+      - "Flask"
+
+  - category: "Databases"
+    items:
+      - "MySQL"
+      - "PostgreSQL"
+      - "MongoDB"
+
+  - category: "Tools & Platforms"
+    items:
+      - "Docker"
+      - "Git"
+      - "Linux"
+
+  - category: "Testing"
+    items:
+      - "Unit Testing"
+      - "Integration Testing"
+      - "Selenium"
+
+languages:
+  - "English (Fluent)"
+  - "Spanish (Conversational)"
+
+interests: "Open-source contribution, Machine Learning, Cloud Computing, Teaching, Traveling."
+
+experience:
+  - position: "Freelance Software Engineer"
+    company: "Self-employed"
+    startDate: "Jan 2018"
+    endDate: "Present"
+    responsibilities:
+      - "Developed scalable software solutions for clients in various industries."
+      - "Conducted code and architecture reviews to improve application performance."
+      - "Implemented test automation frameworks to enhance software reliability."
+
+  - position: "Senior Software Developer"
+    company: "Tech Company XYZ"
+    startDate: "Jun 2015"
+    endDate: "Dec 2017"
+    responsibilities:
+      - "Led a team of developers in creating enterprise-level applications."
+      - "Optimized database queries, improving application response times by 30%."
+      - "Mentored junior developers and conducted regular code reviews."
+
+education:
+  - degree: "Master of Science in Computer Science"
+    institution: "University of ABC"
+    year: "2013 - 2015"
+    details: "Specialization in Software Engineering."
+
+  - degree: "Bachelor of Science in Computer Science"
+    institution: "University of ABC"
+    year: "2009 - 2013"
+    details: "Graduated with honors."
+
+certifications:
+  - "Certified Kubernetes Administrator (CKA)"
+  - "Microsoft Certified: Azure Developer Associate"
+  - "Certified ScrumMaster (CSM)"
+
+projects:
+  - name: "Open-Source Contribution: Project Name"
+    description: "Contributed to an open-source project by implementing new features and fixing bugs."
+    link: "https://github.com/yourusername/projectname"

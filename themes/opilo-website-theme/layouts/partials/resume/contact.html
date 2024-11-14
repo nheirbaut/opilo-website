@@ -1,0 +1,19 @@
+<div class="mb-5">
+    <h3>Contact Information</h3>
+    <hr>
+    <p><strong>Email:</strong> <a href="mailto:{{- .Site.Data.resume.contact.email -}}">{{-
+            .Site.Data.resume.contact.email -}}</a></p>
+    <p><strong>Phone:</strong> {{ .Site.Data.resume.contact.phone }}</p>
+    <p><strong>Location:</strong> {{ .Site.Data.resume.contact.location }}</p>
+
+    <h5 class="mt-4">Follow Me</h5>
+    <a class="me-2" href="{{ .Site.Data.resume.contact.linkedin }}" target="_blank" title="LinkedIn">
+        <i class="bi bi-linkedin"></i>
+    </a>
+    <a class="me-2" href="{{ .Site.Data.resume.contact.github }}" target="_blank" title="GitHub">
+        <i class="bi bi-github"></i>
+    </a>
+    <a class="me-2" href="{{ .Site.Data.resume.contact.x }}" target="_blank" title="X">
+        <i class="bi bi-twitter-x"></i>
+    </a>
+</div>
