@@ -9,17 +9,7 @@
                 <div class="col-md-4">
                     {{ partial "resume/contact" .Site.Data.resume.contact }}
                     {{ partial "resume/skills" .Site.Data.resume.skills }}
-
-                    <!-- Languages -->
-                    <div class="mb-5">
-                        <h3>Languages</h3>
-                        <hr>
-                        <ul class="list-unstyled">
-                            <li>English (Fluent)</li>
-                            <li>Spanish (Conversational)</li>
-                            <!-- Add more languages as needed -->
-                        </ul>
-                    </div>
+                    {{ partial "resume/languages" .Site.Data.resume.languages }}
 
                     <!-- Interests -->
                     <div class="mb-5">
