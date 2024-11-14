@@ -17,19 +17,7 @@
                 <div class="col-md-8">
                     {{ partial "resume/experience" .Site.Data.resume.experience }}
                     {{ partial "resume/education" .Site.Data.resume.education }}
-
-
-                    <!-- Certifications -->
-                    <div class="mb-5">
-                        <h3>Certifications</h3>
-                        <hr>
-                        <ul>
-                            <li>Certified Kubernetes Administrator (CKA)</li>
-                            <li>Microsoft Certified: Azure Developer Associate</li>
-                            <li>Certified ScrumMaster (CSM)</li>
-                            <!-- Add more certifications as needed -->
-                        </ul>
-                    </div>
+                    {{ partial "resume/certifications" .Site.Data.resume.certifications }}
 
                     <!-- Projects -->
                     <div class="mb-5">
@@ -48,17 +36,6 @@
                             <a href="https://github.com/yourusername/webapp" target="_blank">View on GitHub</a>
                         </div>
                         <!-- Add more project items as needed -->
-                    </div>
-
-                    <!-- Awards -->
-                    <div class="mb-5">
-                        <h3>Awards</h3>
-                        <hr>
-                        <ul>
-                            <li>Best Software Engineer Award at Tech Company XYZ (2017)</li>
-                            <li>Dean's List at University of ABC (2010 - 2013)</li>
-                            <!-- Add more awards as needed -->
-                        </ul>
                     </div>
                 </div>
             </div>
