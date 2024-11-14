@@ -1,0 +1,11 @@
+<div class="mb-5">
+    <h3>Education</h3>
+    <hr>
+    {{ range . }}
+    <div class="mb-4">
+        <h4>{{ .degree }}</h4>
+        <h5 class="text-muted">{{ .institution }} | {{ .year }}</h5>
+        <p>{{ .details }}</p>
+    </div>
+    {{ end }}
+</div>
