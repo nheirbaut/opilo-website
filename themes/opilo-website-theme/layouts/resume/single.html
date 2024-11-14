@@ -18,25 +18,7 @@
                     {{ partial "resume/experience" .Site.Data.resume.experience }}
                     {{ partial "resume/education" .Site.Data.resume.education }}
                     {{ partial "resume/certifications" .Site.Data.resume.certifications }}
-
-                    <!-- Projects -->
-                    <div class="mb-5">
-                        <h3>Projects</h3>
-                        <hr>
-                        <!-- Project Item -->
-                        <div class="mb-4">
-                            <h4>Open-Source Contribution: Project Name</h4>
-                            <p>Contributed to an open-source project by implementing new features and fixing bugs, enhancing the project's functionality for users worldwide.</p>
-                            <a href="https://github.com/yourusername/projectname" target="_blank">View on GitHub</a>
-                        </div>
-                        <!-- Project Item -->
-                        <div class="mb-4">
-                            <h4>Personal Project: Web Application</h4>
-                            <p>Developed a web application that helps users manage tasks efficiently, utilizing Python and Django.</p>
-                            <a href="https://github.com/yourusername/webapp" target="_blank">View on GitHub</a>
-                        </div>
-                        <!-- Add more project items as needed -->
-                    </div>
+                    {{ partial "resume/projects" .Site.Data.resume.projects }}
                 </div>
             </div>
         </div>

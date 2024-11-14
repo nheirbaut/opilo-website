@@ -1,0 +1,13 @@
+<div class="mb-5">
+    <h3>Projects</h3>
+    <hr>
+    {{ range . }}
+    <div class="mb-4">
+        <h4>{{ .name }}</h4>
+        <p>{{ .description }}</p>
+        {{ if .link }}
+        <a href="{{ .link }}" target="_blank">View on GitHub</a>
+        {{ end }}
+    </div>
+    {{ end }}
+</div>
