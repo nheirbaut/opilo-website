@@ -1,0 +1,20 @@
+<!-- 4. Courses (With CTAs) -->
+<section class="courses py-5">
+    <div class="container">
+        <h2 class="text-center">Courses I Organize</h2>
+        <div class="row mt-4">
+            {{ range . }}
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="{{- .icon -}}" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                        <h5 class="card-title">{{- .course -}}</h5>
+                        <p class="card-text">{{- .description -}}</p>
+                        <a href="{{- .link -}}" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

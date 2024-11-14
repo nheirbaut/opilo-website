@@ -12,49 +12,7 @@
   </section>
 
   {{ partial "home/services" .Site.Data.services }}
-
-  <!-- 4. Courses (With CTAs) -->
-  <section class="courses py-5">
-    <div class="container">
-      <h2 class="text-center">Courses I Organize</h2>
-      <div class="row mt-4">
-        <!-- Course 1 -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="courses/course1.jpg" class="card-img-top" alt="Course Image">
-            <div class="card-body">
-              <h5 class="card-title">Introduction to Python</h5>
-              <p class="card-text">Learn the basics of Python programming in this comprehensive course.</p>
-              <a href="#" class="btn btn-primary">Enroll Now</a>
-            </div>
-          </div>
-        </div>
-        <!-- Course 2 -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="courses/course2.jpg" class="card-img-top" alt="Course Image">
-            <div class="card-body">
-              <h5 class="card-title">Advanced C++ Techniques</h5>
-              <p class="card-text">Deep dive into advanced concepts and best practices in C++.</p>
-              <a href="#" class="btn btn-primary">Enroll Now</a>
-            </div>
-          </div>
-        </div>
-        <!-- Course 3 -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="courses/course3.jpg" class="card-img-top" alt="Course Image">
-            <div class="card-body">
-              <h5 class="card-title">Docker for Developers</h5>
-              <p class="card-text">Master Docker and containerization to streamline your development workflow.</p>
-              <a href="#" class="btn btn-primary">Enroll Now</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more courses as needed -->
-      </div>
-    </div>
-  </section>
+  {{ partial "home/courses" .Site.Data.courses }}
 
   <!-- 5. Testimonials (Optional Section) -->
   {{/*  <section class="testimonials py-5 bg-light">
