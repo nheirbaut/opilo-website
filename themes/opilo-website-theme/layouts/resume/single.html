@@ -15,32 +15,7 @@
 
                 <!-- Right Column -->
                 <div class="col-md-8">
-                    <!-- Professional Experience -->
-                    <div class="mb-5">
-                        <h3>Professional Experience</h3>
-                        <hr>
-                        <!-- Experience Item -->
-                        <div class="mb-4">
-                            <h4>Freelance Software Engineer</h4>
-                            <h5 class="text-muted">Self-employed | Jan 2018 - Present</h5>
-                            <ul>
-                                <li>Developed scalable software solutions for clients in various industries.</li>
-                                <li>Conducted code and architecture reviews to improve application performance.</li>
-                                <li>Implemented test automation frameworks to enhance software reliability.</li>
-                            </ul>
-                        </div>
-                        <!-- Experience Item -->
-                        <div class="mb-4">
-                            <h4>Senior Software Developer</h4>
-                            <h5 class="text-muted">Tech Company XYZ | Jun 2015 - Dec 2017</h5>
-                            <ul>
-                                <li>Led a team of developers in creating enterprise-level applications.</li>
-                                <li>Optimized database queries, improving application response times by 30%.</li>
-                                <li>Mentored junior developers and conducted regular code reviews.</li>
-                            </ul>
-                        </div>
-                        <!-- Add more experience items as needed -->
-                    </div>
+                    {{ partial "resume/experience" .Site.Data.resume.experience }}
 
                     <!-- Education -->
                     <div class="mb-5">
