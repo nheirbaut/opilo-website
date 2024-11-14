@@ -1,9 +1,9 @@
 name: "Niels Heirbaut"
 subtitle: "Freelance Software Engineer"
-description: "Specializing in Python, C++, C#, Docker, Linux, and more."
+description: "Specializing in Python, C/C++, C#, Docker, Linux, and more."
 
 contact:
-  email: "niels@opilo.nl"
+  email: "info@opilo.nl"
   phone: "+31 6 24901736"
   location: "Lekkerkerk, Netherlands"
   linkedin: "https://www.linkedin.com/in/nielsheirbaut"
@@ -22,14 +22,17 @@ skills:
       - "HTML"
       - "CSS"
       - "JavaScript"
-      - "Django"
-      - "Flask"
 
   - category: "Databases"
     items:
       - "MySQL"
       - "PostgreSQL"
       - "MongoDB"
+
+  - category: "Industrial"
+    items:
+      - "Modbus"
+      - "MQTT"
 
   - category: "Tools & Platforms"
     items:

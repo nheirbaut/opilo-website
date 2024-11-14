@@ -11,50 +11,7 @@
     </div>
   </section>
 
-  <!-- 3. Services Offered (Moved Up) -->
-  <section class="services py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center">Services I Offer</h2>
-      <div class="row mt-4">
-        <!-- Service 1 -->
-        <div class="col-md-4">
-          <div class="card h-100 text-center">
-            <div class="card-body">
-              <img src="icons/test-automation.png" alt="Test Automation" class="mb-3" width="50">
-              <h5 class="card-title">Test Automation</h5>
-              <p class="card-text">I provide automated testing solutions to improve software reliability and efficiency.
-              </p>
-              <a href="#" class="btn btn-primary">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <!-- Service 2 -->
-        <div class="col-md-4">
-          <div class="card h-100 text-center">
-            <div class="card-body">
-              <img src="icons/code-review.png" alt="Code Review" class="mb-3" width="50">
-              <h5 class="card-title">Independent Code Reviews</h5>
-              <p class="card-text">Offering thorough code reviews to ensure code quality and best practices.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <!-- Service 3 -->
-        <div class="col-md-4">
-          <div class="card h-100 text-center">
-            <div class="card-body">
-              <img src="icons/architecture.png" alt="Architecture Review" class="mb-3" width="50">
-              <h5 class="card-title">Architecture Reviews</h5>
-              <p class="card-text">Providing expert insights into software architecture for scalability and performance.
-              </p>
-              <a href="#" class="btn btn-primary">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more services as needed -->
-      </div>
-    </div>
-  </section>
+  {{ partial "home/services" .Site.Data.services }}
 
   <!-- 4. Courses (With CTAs) -->
   <section class="courses py-5">

@@ -1,0 +1,14 @@
+- service: "Test Automation"
+  description: "I provide automated testing solutions to improve software reliability and efficiency."
+  icon: "images/automation-testing.svg"
+  link: "/services/test-automation"
+
+- service: "Code Reviews"
+  description: "Offering thorough code reviews to ensure code quality and best practices."
+  icon: "images/automation-testing.svg"
+  link: "/services/code-reviews"
+
+- service: "Architecture Reviews"
+  description: "Providing expert insights into software architecture for scalability and performance."
+  icon: "images/automation-testing.svg"
+  link: "/services/architecture-reviews"
