@@ -8,19 +8,7 @@
                 <!-- Left Column -->
                 <div class="col-md-4">
                     {{ partial "resume/contact" .Site.Data.resume.contact }}
-
-                    <!-- Skills -->
-                    <div class="mb-5">
-                        <h3>Skills</h3>
-                        <hr>
-                        <ul class="list-unstyled">
-                            <li><strong>Programming Languages:</strong> Python, C++, C#</li>
-                            <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript, Django, Flask</li>
-                            <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
-                            <li><strong>Tools & Platforms:</strong> Docker, Git, Linux</li>
-                            <li><strong>Testing:</strong> Unit Testing, Integration Testing, Selenium</li>
-                        </ul>
-                    </div>
+                    {{ partial "resume/skills" .Site.Data.resume.skills }}
 
                     <!-- Languages -->
                     <div class="mb-5">
