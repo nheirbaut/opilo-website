@@ -1,0 +1,22 @@
+<section class="blog-posts py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">Latest Blog Posts</h2>
+        <div class="row mt-4">
+            {{ $postsToShow := .Site.Params.postsToShow | default 3 }}
+            {{ $posts := where .Site.RegularPages "Section" "posts" }}
+            {{ range first $postsToShow (sort $posts "Date" "desc") }}
+            <div class="col-md-4">
+                <div class="card h-100">
+                    {{ $image := .Params.Image | default "/images/zx81.jpg" }}
+                    <img src="{{ $image }}" class="card-img-top" alt="Blog Image">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ .Title }}</h5>
+                        <p class="card-text">{{ .Summary }}</p>
+                        <a href="{{ .RelPermalink }}" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

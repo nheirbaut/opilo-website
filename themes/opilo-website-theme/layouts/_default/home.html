@@ -13,50 +13,8 @@
 
   {{ partial "home/services" .Site.Data.services }}
   {{ partial "home/courses" .Site.Data.courses }}
+  {{ partial "home/posts" . }}
 
-  <!-- 6. Latest Blog Posts -->
-  <section class="blog-posts py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center">Latest Blog Posts</h2>
-      <div class="row mt-4">
-        <!-- Blog Post 1 -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="blog/blog1.jpg" class="card-img-top" alt="Blog Image">
-            <div class="card-body">
-              <h5 class="card-title">Understanding Async Programming</h5>
-              <p class="card-text">An in-depth look at asynchronous programming patterns in modern software development.
-              </p>
-              <a href="#" class="btn btn-outline-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-        <!-- Blog Post 2 -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="blog/blog2.jpg" class="card-img-top" alt="Blog Image">
-            <div class="card-body">
-              <h5 class="card-title">Effective Test Automation Strategies</h5>
-              <p class="card-text">Learn how to implement efficient test automation in your projects.</p>
-              <a href="#" class="btn btn-outline-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-        <!-- Blog Post 3 -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="blog/blog3.jpg" class="card-img-top" alt="Blog Image">
-            <div class="card-body">
-              <h5 class="card-title">Docker Tips and Tricks</h5>
-              <p class="card-text">Enhance your Docker skills with these practical tips.</p>
-              <a href="#" class="btn btn-outline-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more blog posts as needed -->
-      </div>
-    </div>
-  </section>
 
   <!-- 7. About Me and Technologies Overview (Combined) -->
   <section class="about-me py-5">
