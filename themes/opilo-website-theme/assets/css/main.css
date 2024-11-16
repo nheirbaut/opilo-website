@@ -474,3 +474,31 @@ section h2::after {
 .course-cta .btn {
     margin-top: 20px;
 }
+
+/* Blog Post Styles */
+.blog-post header {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.blog-post h1 {
+    font-size: 2.5rem;
+}
+
+.blog-post .text-muted {
+    color: #6c757d;
+}
+
+.blog-post .badge {
+    margin-right: 5px;
+}
+
+.blog-post footer {
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+.blog-post p {
+    line-height: 1.6;
+}
