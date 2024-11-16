@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main>
+    <div class="container py-5">
+        <h1>Available Courses</h1>
+        <div class="row">
+            {{ range .Pages }}
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">{{ .Title }}</h2>
+                        <p class="card-text">{{ .Params.description }}</p>
+                        <p><strong>Instructor:</strong> {{ .Params.instructor }}</p>
+                        <a href="{{ .RelPermalink }}" class="btn btn-primary">View Course</a>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</main>
+{{ end }}
