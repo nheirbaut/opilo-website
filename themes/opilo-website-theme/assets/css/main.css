@@ -449,3 +449,28 @@ section h2::after {
 .service-cta .btn {
     margin-top: 20px;
 }
+
+/* Course Page Styles */
+.course-header {
+    background-color: #444;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.course-content {
+    padding: 40px 0;
+}
+
+.course-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.course-syllabus ul {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.course-cta .btn {
+    margin-top: 20px;
+}
