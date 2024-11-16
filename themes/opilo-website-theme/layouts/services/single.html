@@ -1,0 +1,44 @@
+{{ define "main" }}
+<main>
+    <!-- Service Header -->
+    <section class="service-header py-5 text-center text-white" style="background-image: url('{{ "images/zx81.jpg" | relURL }}'); background-size: cover;">
+        <div class="container">
+            <h1 class="display-4">{{ .Title }}</h1>
+            <p class="lead">{{ .Params.description }}</p>
+        </div>
+    </section>
+
+    <!-- Service Content -->
+    <section class="service-content py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Main Content -->
+                <div class="col-md-8">
+                    {{ .Content }}
+                </div>
+                <!-- Sidebar -->
+                <div class="col-md-4">
+                    <!-- Features -->
+                    <div class="service-features mb-4">
+                        <h3>Features</h3>
+                        <ul>
+                            {{ range .Params.features }}
+                            <li>{{ . }}</li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    <!-- Pricing -->
+                    <div class="service-price mb-4">
+                        <h3>Pricing</h3>
+                        <p>{{ .Params.price }}</p>
+                    </div>
+                    <!-- Call to Action -->
+                    <div class="service-cta">
+                        <a href="{{ "/contact/" | relURL }}" class="btn btn-primary">{{ .Params.call_to_action }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{{ end }}
