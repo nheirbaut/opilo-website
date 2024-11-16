@@ -1,0 +1,32 @@
+{{ define "main" }}
+<main>
+    <div class="container py-5">
+        <article class="blog-post">
+            <!-- Post Header -->
+            <header class="mb-4">
+                <h1>{{ .Title }}</h1>
+                <p class="text-muted">By {{ .Params.author }} on {{ .Date.Format "January 2, 2006" }}</p>
+                <!-- Tags -->
+                {{ if .Params.tags }}
+                <p>
+                    {{ range $index, $tag := .Params.tags }}
+                    <a href="{{ "/tags/" | relURL }}{{ $tag | urlize }}" class="badge bg-secondary">{{ $tag }}</a>
+                    {{ end }}
+                </p>
+                {{ end }}
+            </header>
+            <!-- Post Content -->
+            {{ .Content }}
+            <!-- Post Footer -->
+            <footer class="mt-5">
+                <p>Filed under:
+                    {{ range $index, $category := .Params.categories }}
+                    {{ if $index }}, {{ end }}
+                    <a href="{{ "/categories/" | relURL }}{{ $category | urlize }}">{{ $category }}</a>
+                    {{ end }}
+                </p>
+            </footer>
+        </article>
+    </div>
+</main>
+{{ end }}

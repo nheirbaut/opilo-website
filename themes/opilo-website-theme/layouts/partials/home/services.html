@@ -1,0 +1,23 @@
+<section class="services py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">Services I Offer</h2>
+        <div class="row mt-4">
+            {{ $servicesToShow := .Site.Params.servicesToShow | default 3 }}
+            {{ $courses := where .Site.RegularPages "Section" "services" }}
+            {{ range first $servicesToShow (sort $courses "Date" "desc") }}
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        {{ $icon := .Params.Image | default "/images/automation-testing.svg" }}
+                        <img src="{{- $icon -}}" alt="{{ .Title }} Icon" class="mb-3" width="50">
+                        <h5 class="card-title">{{- .Title -}}</h5>
+                        <p class="card-text">{{- .Description -}}
+                        </p>
+                        <a href="{{ .RelPermalink }}" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

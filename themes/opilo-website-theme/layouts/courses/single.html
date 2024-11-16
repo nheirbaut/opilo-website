@@ -1,0 +1,48 @@
+{{ define "main" }}
+<main>
+    <!-- Course Header -->
+    <section class="course-header py-5 text-center text-white" style="background-image: url('{{ "images/zx81.jpg" | relURL }}'); background-size: cover;">
+        <div class="container">
+            <h1 class="display-4">{{ .Title }}</h1>
+            <p class="lead">{{ .Params.description }}</p>
+            <a href="{{ "/enroll/" | relURL }}" class="btn btn-primary">{{ .Params.call_to_action }}</a>
+        </div>
+    </section>
+
+    <!-- Course Content -->
+    <section class="course-content py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Main Content -->
+                <div class="col-md-8">
+                    {{ .Content }}
+                </div>
+                <!-- Sidebar -->
+                <div class="col-md-4">
+                    <!-- Course Details -->
+                    <div class="course-details mb-4">
+                        <h3>Course Details</h3>
+                        <p><strong>Instructor:</strong> {{ .Params.instructor }}</p>
+                        <p><strong>Duration:</strong> {{ .Params.duration }}</p>
+                        <p><strong>Level:</strong> {{ .Params.level }}</p>
+                        <p><strong>Price:</strong> {{ .Params.price }}</p>
+                    </div>
+                    <!-- Syllabus -->
+                    <div class="course-syllabus mb-4">
+                        <h3>Syllabus</h3>
+                        <ul>
+                            {{ range .Params.syllabus }}
+                            <li>{{ . }}</li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    <!-- Call to Action -->
+                    <div class="course-cta">
+                        <a href="{{ "/enroll/" | relURL }}" class="btn btn-primary">{{ .Params.call_to_action }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{{ end }}

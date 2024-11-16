@@ -1,0 +1,28 @@
+{{ define "main" }}
+<main>
+    {{ partial "resume/header" . }}
+
+    <section class="resume-content py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-md-4">
+                    {{ partial "resume/contact" .Site.Data.resume.contact }}
+                    {{ partial "resume/skills" .Site.Data.resume.skills }}
+                    {{ partial "resume/languages" .Site.Data.resume.languages }}
+                    {{ partial "resume/interests" .Site.Data.resume.interests }}
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-md-8">
+                    {{ partial "resume/experience" .Site.Data.resume.experience }}
+                    {{ partial "resume/education" .Site.Data.resume.education }}
+                    {{ partial "resume/certifications" .Site.Data.resume.certifications }}
+                    {{ partial "resume/projects" .Site.Data.resume.projects }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+{{ end }}

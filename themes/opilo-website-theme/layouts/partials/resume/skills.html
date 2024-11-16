@@ -1,0 +1,9 @@
+<div class="mb-5">
+    <h3>Skills</h3>
+    <hr>
+    <ul class="list-unstyled">
+        {{ range . }}
+        <li><strong>{{ .category }}:</strong> {{ delimit .items ", " }}</li>
+        {{ end }}
+    </ul>
+</div>

@@ -1,0 +1,15 @@
+<div class="mb-5">
+    <h3>Professional Experience</h3>
+    <hr>
+    {{ range . }}
+    <div class="mb-4">
+        <h4>{{ .position }}</h4>
+        <h5 class="text-muted">{{ .company }} | {{ .startDate }} - {{ .endDate }}</h5>
+        <ul>
+            {{ range .responsibilities }}
+            <li>{{ . }}</li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+</div>

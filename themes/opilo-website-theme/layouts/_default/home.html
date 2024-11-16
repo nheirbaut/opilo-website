@@ -1,5 +1,104 @@
 {{ define "main" }}
 <main>
-  {{ .Content }}
+  <!-- 2. Hero Section with Enhanced Tagline -->
+  <section class="hero-section text-center text-white d-flex align-items-center"
+    style="background-image: url('/images/zx81.jpg'); height: 100vh; background-size: cover;">
+    <div class="container">
+      <h1 class="display-4">Freelance Software Engineer</h1>
+      <p class="lead">Delivering robust software solutions through expert code and architecture reviews.</p>
+      <a href="/resume" class="btn btn-primary btn-lg m-2">View My Resume</a>
+      <a href="/contact" class="btn btn-outline-light btn-lg m-2">Contact Me</a>
+    </div>
+  </section>
+
+  {{ partial "home/services" . }}
+  {{ partial "home/courses" . }}
+  {{ partial "home/posts" . }}
+
+  <!-- 7. About Me and Technologies Overview (Combined) -->
+  <section class="about-me py-5">
+    <div class="container">
+      <h2 class="text-center">About Me</h2>
+      <div class="row mt-4">
+        <div class="col-md-4 text-center">
+          <!-- Optional: Add a profile image -->
+          <img src="/images/niels.jpg" alt="Your Photo" class="img-fluid mb-3" width="200">
+        </div>
+        <div class="col-md-8">
+          <p>
+            I am a freelance software engineer with over X years of experience in developing high-quality software
+            solutions. My expertise lies in Python, C++, C#, Docker, Linux, and more. I am passionate about creating
+            efficient and scalable applications.
+          </p>
+          <!-- Technologies Overview -->
+          <h5>Technologies I Work With:</h5>
+          <div class="row mt-3">
+            <div class="col-md-2 col-4">
+              <img src="icons/python.png" alt="Python" class="img-fluid">
+              <p>Python</p>
+            </div>
+            <div class="col-md-2 col-4">
+              <img src="icons/cpp.png" alt="C++" class="img-fluid">
+              <p>C++</p>
+            </div>
+            <div class="col-md-2 col-4">
+              <img src="icons/csharp.png" alt="C#" class="img-fluid">
+              <p>C#</p>
+            </div>
+            <div class="col-md-2 col-4">
+              <img src="icons/docker.png" alt="Docker" class="img-fluid">
+              <p>Docker</p>
+            </div>
+            <div class="col-md-2 col-4">
+              <img src="icons/linux.png" alt="Linux" class="img-fluid">
+              <p>Linux</p>
+            </div>
+            <!-- Add more as needed -->
+          </div>
+          <a href="#" class="btn btn-primary mt-3">Download My Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Contact Section -->
+  <section class="contact py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Get in Touch</h2>
+      <div class="row mt-4">
+        <!-- Contact Form -->
+        <div class="col-md-6">
+          <form action="#" method="post">
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name *</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email *</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message *</label>
+              <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+        <!-- Contact Information -->
+        <div class="col-md-6">
+          <h5>Contact Information</h5>
+          <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+          <p><strong>Phone:</strong> +123 456 7890</p>
+          <p><strong>Location:</strong> Your City, Country</p>
+          <h5 class="mt-4">Follow Me</h5>
+          <!-- Social Media Links -->
+          <a href="#" class="me-2"><img src="icons/linkedin.png" alt="LinkedIn" width="30"></a>
+          <a href="#" class="me-2"><img src="icons/github.png" alt="GitHub" width="30"></a>
+          <a href="#"><img src="icons/twitter.png" alt="Twitter" width="30"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 {{ end }}
