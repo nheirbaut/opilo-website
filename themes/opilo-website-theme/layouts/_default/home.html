@@ -6,45 +6,7 @@
   {{ partial "home/courses" . }}
   {{ partial "home/posts" . }}
   {{ partial "home/about-me" . }}
-
-  <!-- 8. Contact Section -->
-  <section class="contact py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center">Get in Touch</h2>
-      <div class="row mt-4">
-        <!-- Contact Form -->
-        <div class="col-md-6">
-          <form action="#" method="post">
-            <div class="mb-3">
-              <label for="name" class="form-label">Your Name *</label>
-              <input type="text" class="form-control" id="name" required>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Your Email *</label>
-              <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Your Message *</label>
-              <textarea class="form-control" id="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
-        </div>
-        <!-- Contact Information -->
-        <div class="col-md-6">
-          <h5>Contact Information</h5>
-          <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-          <p><strong>Phone:</strong> +123 456 7890</p>
-          <p><strong>Location:</strong> Your City, Country</p>
-          <h5 class="mt-4">Follow Me</h5>
-          <!-- Social Media Links -->
-          <a href="#" class="me-2"><img src="icons/linkedin.png" alt="LinkedIn" width="30"></a>
-          <a href="#" class="me-2"><img src="icons/github.png" alt="GitHub" width="30"></a>
-          <a href="#"><img src="icons/twitter.png" alt="Twitter" width="30"></a>
-        </div>
-      </div>
-    </div>
-  </section>
+  {{ partial "home/contact" . }}
 
 </main>
 {{ end }}
