@@ -1,22 +1,14 @@
-<section class="courses py-5">
-    <div class="container">
-        <h2 class="text-center">Courses I Organize</h2>
-        <div class="row mt-4">
-            {{ $coursesToShow := .Site.Params.coursesToShow | default 3 }}
-            {{ $courses := where .Site.RegularPages "Section" "courses" }}
-            {{ range first $coursesToShow (sort $courses "Date" "desc") }}
-            <div class="col-md-4">
-                <div class="card h-100">
-                    {{ $image := .Params.Image | default "/images/zx81.jpg" }}
-                    <img src="{{- $image -}}" class="card-img-top" alt="Course Image">
-                    <div class="card-body">
-                        <h5 class="card-title">{{- .Title -}}</h5>
-                        <p class="card-text">{{- .Description -}}</p>
-                        <a href="{{- .RelPermalink -}}" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            {{ end }}
-        </div>
+<section class="section">
+  <h2><a href="/courses" class="section-link">Offered Courses</a></h2>
+  <div class="grid">
+    {{ $coursesToShow := .Site.Params.coursesToShow | default 3 }}
+    {{ $courses := where .Site.RegularPages "Section" "courses" }}
+    {{ range first $coursesToShow (sort $courses "Date" "desc") }}
+    <div class="card">
+      <h3>{{- .Title -}}</h3>
+      <p>{{- .Description -}}</p>
+      <a href="{{ .RelPermalink }}" class="cta">Learn More</a>
     </div>
+    {{ end }}
+  </div>
 </section>
