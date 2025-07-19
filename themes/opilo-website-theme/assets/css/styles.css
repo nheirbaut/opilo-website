@@ -49,6 +49,46 @@ body {
   cursor: pointer;
 }
 
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #1e3a8a, #2dd4bf);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero h1 {
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  margin: 0;
+}
+
+.hero p {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  margin: 0.5rem 0;
+}
+
+.cta {
+  background: #2dd4bf;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+.cta:hover {
+  background: #1e3a8a;
+}
+
+/* Sections */
+.section {
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
 /* Responsive Design */
 @media (max-width: 600px) {
   .nav-links {
@@ -64,6 +104,18 @@ body {
 
   .hamburger {
     display: block;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 2rem 1rem;
   }
 }
 
