@@ -1,29 +1,24 @@
-<nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <a class="navbar-brand fw-bold" href="/">{{- .Site.Params.shortTitle -}}</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        {{ range .Site.Menus.main }}
-        <li class="nav-item">
-          <a class="nav-link{{ if $.IsMenuCurrent "main" . }} active" aria-current="page{{ end }}" href="{{ .URL }}">{{ .Pre }}
-            <span>{{ .Name }}</span>
-          </a>
-        </li>
-        {{ end }}
-      </ul>
-      <ul class="navbar-nav ms-auto">
-        {{ range .Site.Menus.social }}
-        <li class="nav-item">
-          <a class="nav-link" href="{{ .URL }}" target="_blank" title="{{ .Name }}">
-            <i class="{{ .Params.icon }}"></i>
-          </a>
-        </li>
-        {{ end }}
-      </ul>
+{{ $currentPage := . }}
+  <nav class="nav">
+    <div class="nav-container">
+      <button class="hamburger" id="nav-toggle">☰</button>
+      <div class="nav-links" id="nav-links">
+      {{- range .Site.Menus.main.ByWeight -}}
+      {{ if .HasChildren }}
+        <div class="menu-item has-dropdown">
+          <a href="{{ .URL | relURL }}" class="nav-link" tabindex="0">{{ .Name }}</a>
+          <div class="dropdown">
+            {{- range .Children -}}
+              <a href="{{ .URL | relURL }}" tabindex="0"{{ if $currentPage.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a>
+            {{- end -}}
+          </div>
+        </div>
+      {{ else }}
+        <div class="menu-item">
+          <a href="{{ .URL | relURL }}" class="nav-link"{{ if $currentPage.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a>
+        </div>
+      {{- end -}}
+      {{ end }}
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
