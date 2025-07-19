@@ -1,23 +1,14 @@
-<section class="services py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center">Services I Offer</h2>
-        <div class="row mt-4">
-            {{ $servicesToShow := .Site.Params.servicesToShow | default 3 }}
-            {{ $courses := where .Site.RegularPages "Section" "services" }}
-            {{ range first $servicesToShow (sort $courses "Date" "desc") }}
-            <div class="col-md-4">
-                <div class="card h-100 text-center">
-                    <div class="card-body">
-                        {{ $icon := .Params.Image | default "/images/automation-testing.svg" }}
-                        <img src="{{- $icon -}}" alt="{{ .Title }} Icon" class="mb-3" width="50">
-                        <h5 class="card-title">{{- .Title -}}</h5>
-                        <p class="card-text">{{- .Description -}}
-                        </p>
-                        <a href="{{ .RelPermalink }}" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            {{ end }}
-        </div>
+<section class="section">
+  <h2><a href="/services" class="section-link">Offered Services</a></h2>
+  <div class="grid">
+    {{ $servicesToShow := .Site.Params.servicesToShow | default 3 }}
+    {{ $services := where .Site.RegularPages "Section" "services" }}
+    {{ range first $servicesToShow (sort $services "Date" "desc") }}
+    <div class="card">
+      <h3>{{- .Title -}}</h3>
+      <p>{{- .Description -}}</p>
+      <a href="{{ .RelPermalink }}" class="cta">Learn More</a>
     </div>
+    {{ end }}
+  </div>
 </section>
