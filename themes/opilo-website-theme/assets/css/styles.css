@@ -49,40 +49,26 @@ body {
   cursor: pointer;
 }
 
-.menu-item {
-  position: relative;
+/* Responsive Design */
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #1e3a8a;
+    padding: 1rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }
 
-.has-dropdown > a::after {
-  content: "▼";
-  font-size: 0.8rem;
-  margin-left: 0.3rem;
-}
-
-.dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  min-width: 200px;
-  z-index: 100;
-}
-
-.dropdown a {
-  display: block;
-  padding: 0.5rem 1rem;
-  color: #1e3a8a;
-  font-size: 0.9rem;
-}
-
-.dropdown a:hover {
-  background: #2dd4bf;
-  color: white;
-}
-
-.menu-item:hover .dropdown {
-  display: block;
+@media (min-width: 600px) and (max-width: 900px) {
+  .nav-links {
+    gap: 1rem;
+  }
 }

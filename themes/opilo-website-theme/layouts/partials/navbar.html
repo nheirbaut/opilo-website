@@ -1,23 +1,11 @@
-{{ $currentPage := . }}
   <nav class="nav">
     <div class="nav-container">
-      <button class="hamburger" id="nav-toggle">☰</button>
-      <div class="nav-links" id="nav-links">
+      <div class="hamburger">☰</div>
+      <div class="nav-links">
       {{- range .Site.Menus.main.ByWeight -}}
-      {{ if .HasChildren }}
-        <div class="menu-item has-dropdown">
-          <a href="{{ .URL | relURL }}" class="nav-link" tabindex="0">{{ .Name }}</a>
-          <div class="dropdown">
-            {{- range .Children -}}
-              <a href="{{ .URL | relURL }}" tabindex="0"{{ if $currentPage.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a>
-            {{- end -}}
-          </div>
-        </div>
-      {{ else }}
         <div class="menu-item">
-          <a href="{{ .URL | relURL }}" class="nav-link"{{ if $currentPage.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a>
+          <a href="{{ .URL | relURL }}">{{ .Name }}</a>
         </div>
-      {{- end -}}
       {{ end }}
       </div>
     </div>
